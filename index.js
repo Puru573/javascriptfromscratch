@@ -44,15 +44,30 @@ console.log(l);
 //for loop
 //for prime number
 
-var num = 10;
-for(var i=1;i<num;i++){
-    if(i%2==0){
-        console.log("number is even");
-    }
-}
+// var num = 10;
+// for(var i=1;i<num;i++){
+//     if(i%2==0){
+//         console.log("number is even");
+//     }
+// }
 const c=2;
 console.log(c);
 
 //na hi redeclare na hi reintialize
-c=4;
+// c=4;
 console.log("hey"); //Assignment to constant variable.
+
+let j=20;//goloal define
+var num=10;
+for(var i=0;i<num;i++){
+    let j=20;
+    if(i%2==0){
+        var hello=1000;
+        console.log(i);
+    }
+   
+    console.log("inner"+j);
+}
+console.log("outer"+j);
+console.log("value of i is " + i);
+console.log(hello);
