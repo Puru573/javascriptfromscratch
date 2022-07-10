@@ -56,6 +56,9 @@ console.log(c);
 //na hi redeclare na hi reintialize
 // c=4;
 console.log("hey"); //Assignment to constant variable.
+// 2nd problem with var keyword
+// var keyword is function scoped is case of function else it is global scope
+// let keyword is block scoped
 
 let j=20;//goloal define
 var num=10;
@@ -65,9 +68,29 @@ for(var i=0;i<num;i++){
         var hello=1000;
         console.log(i);
     }
+  
    
     console.log("inner"+j);
 }
 console.log("outer"+j);
 console.log("value of i is " + i);
 console.log(hello);
+
+//function expression
+let sayhi=function abcd(){
+    console.log("hello guys i am an functional expression");
+}
+console.log("line 54\n" + sayhi); //ye jis func ke andar ke wrap he ye us pure funtion ko print krwayega
+sayhi();//sayhi var ne apna o/p print krwa dya
+
+function calculator(str,a,b){
+    if(str=="add"){
+        return function add(){
+            console.log(a + b);
+        }
+    }
+}
+let returnedfun=calculator("add",2,3);
+console.log("returned function is\n"+
+returnedfun);
+returnedfun();
