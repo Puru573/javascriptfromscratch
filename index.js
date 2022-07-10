@@ -89,8 +89,45 @@ function calculator(str,a,b){
             console.log(a + b);
         }
     }
+    if(str=="subtraction"){
+        return function subraction(){
+            console.log(a - b);
+        }
+    }
+    if(str=="multiplication"){
+        return function multiplication(){
+            console.log(a * b);
+        }
+    }
+    if(str=="division"){
+        return function division(){
+            console.log(a / b);
+        }
+    }
+    if(str=="power"){
+        return function power(){
+            console.log(Math.pow(a,b));
+        }
+    }
+    
 }
 let returnedfun=calculator("add",2,3);
-console.log("returned function is\n"+
-returnedfun);
+let returnedfun1=calculator("subtraction",2,3);
+let returnedfun2=calculator("multiplication",2,3);
+let returnedfun3=calculator("division",2,3);
+let returnedfun4=calculator("power",2,3);
+// console.log("returned function is\n"+
+// returnedfun);
 returnedfun();
+returnedfun1();
+returnedfun2();
+returnedfun3();
+returnedfun4();
+
+// iife = immediate invoke function expression
+let addtionIIFE =(function add(a,b) {
+    console.log(a + b);
+})(20,30);
+
+// console.log(addtionIIFE);
+
