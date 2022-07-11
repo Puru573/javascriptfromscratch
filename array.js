@@ -47,3 +47,8 @@ console.log(arr2d[1][2]);
 let ans=arr2d[1];//by this we select the row
 console.log(ans);
 console.log(ans[2]);//by this we select the column
+console.log(arr2d.length); // number of rows in 2d arr
+console.log(arr2d[1].length); // number of column in 2d arr
+//2d arr me val kaise daale
+arr2d[1][1]=true;
+console.log(arr2d);
