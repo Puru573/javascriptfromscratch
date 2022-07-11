@@ -40,7 +40,15 @@ captainAmerica.sayHi();//method accessing
 //in keyword in JS is used to get kes from the obj
 for(let haathi in captainAmerica){
     //key
-    console.log(haathi);
+    console.log(`${haathi}:${captainAmerica[haathi]}`);
     //haathi jo var he uske andar meri key ki val pari he
     console.log(captainAmerica[haathi]);
+    //var ke andar bind val chahiye
+
+    console.log(captainAmerica.address.city);
+    //nested obj access
+
+    //deleting the key of an object
+    delete captainAmerica.LastName;
+    console.log(captainAmerica.LastName);
 }
