@@ -34,4 +34,13 @@ let captainAmerica={
 console.log(captainAmerica);
 console.log(captainAmerica.friends);
 console.log(captainAmerica.friends[0]);
-console.log(captainAmerica.sayHi());//method accessing
+captainAmerica.sayHi();//method accessing
+
+//for loop
+//in keyword in JS is used to get kes from the obj
+for(let haathi in captainAmerica){
+    //key
+    console.log(haathi);
+    //haathi jo var he uske andar meri key ki val pari he
+    console.log(captainAmerica[haathi]);
+}

@@ -6,6 +6,7 @@ console.log(a);
 
 // "",' ',''
 //double quotes,single quotes,backtick
+// we use backtick when we require var in our strings
 
 a='puru';
 console.log(typeof a);
